@@ -44,7 +44,7 @@ I am interested in learning how digital tools can help me create presentations, 
 | **06** | [Making a Website — BP AWARE](Activity%206%3A%20Making%20a%20Website/) | Designing a website about blood pressure and hypertension |
 | **07** | [Resume Generating](Activity%207%3A%20Resume%20Generating/) | Comparing resumes created with ChatGPT and Claude AI |
 
-> **Portfolio status:** Activities 1–3 have existing output files. Activity 4 contains the Presentation Exam Canva link. Activities 5–7 have README documentation; their original PDFs still need to be uploaded. Activity 6 also needs the runnable website files.
+> **Portfolio progress:** All seven activities have their own documentation. The BP AWARE website source is included in Activity 6. The original PDF submissions for Activities 5–7 still need to be added before final submission.
 
 ## 🌱 What This Course Taught Me
 
