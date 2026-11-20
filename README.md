@@ -39,12 +39,12 @@ I am interested in learning how digital tools can help me create presentations, 
 | **01** | [Presentation Design Principles](Activity%201%3A%20Presentation%20Design%20Principles/) | Learning how to make clear and organized presentations |
 | **02** | [Color Palette and Typography](Activity%202%3A%20Color%20Palette%20and%20Typography/) | Exploring color combinations and readable fonts |
 | **03** | [Social Media Infographics and Mini Project Documentation](Activity%203%3A%20Social%20Media%20Infographics%20and%20Mini%20Project%20Documentation/) | Creating visual information and documenting a project |
-| **04** | [Canva Project](Activity-4/) | [Open Canva submission](https://canva.link/rflj768aiskkt9x) |
-| **05** | [AI Tools Activity](Activity-5/) | Improving an AI-generated picture through a more detailed prompt |
-| **06** | [BP AWARE Website](Activity-6/) | Designing a website about blood pressure and hypertension |
-| **07** | [Comparative Resume Generation](Activity-7/) | Comparing resumes created with ChatGPT and Claude AI |
+| **04** | [Presentation Exam](Activity%204%3A%20Presentation%20Exam/) | [Open Canva submission](https://canva.link/rflj768aiskkt9x) |
+| **05** | [AI Tools Activity](Activity%205%3A%20AI%20Tools%20Activity/) | Improving an AI-generated picture through a more detailed prompt |
+| **06** | [Making a Website — BP AWARE](Activity%206%3A%20Making%20a%20Website/) | Designing a website about blood pressure and hypertension |
+| **07** | [Resume Generating](Activity%207%3A%20Resume%20Generating/) | Comparing resumes created with ChatGPT and Claude AI |
 
-> **Portfolio status:** Activities 1–3 have existing output files. Activity 4 contains the submitted Canva link. Activities 5–7 have README documentation; their original PDFs still need to be uploaded. Activity 6 also needs the runnable website files.
+> **Portfolio status:** Activities 1–3 have existing output files. Activity 4 contains the Presentation Exam Canva link. Activities 5–7 have README documentation; their original PDFs still need to be uploaded. Activity 6 also needs the runnable website files.
 
 ## 🌱 What This Course Taught Me
 
