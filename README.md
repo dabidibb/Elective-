@@ -14,7 +14,7 @@
 ![Seven Activities](https://img.shields.io/badge/07-COURSE%20ACTIVITIES-168D93?style=for-the-badge)
 ![Nursing and Technology](https://img.shields.io/badge/NURSING-%2B%20TECHNOLOGY-5266A5?style=for-the-badge)
 
-**[Explore Activities](#-explore-my-work) · [Skills](#-skills--tools) · [Course Reflection](#-course-reflection)**
+**[See My Projects](#️-see-my-actual-projects) · [Skills](#-skills--tools) · [Course Reflection](#-course-reflection)**
 
 </div>
 
@@ -32,49 +32,38 @@ This collection shows how I explored presentation design, visual communication, 
 |:---:|:---:|:---:|
 | Presentations, colors, typography, and infographics | AI image prompting, resume generation, and web development | Patient-friendly information and blood pressure awareness |
 
-## 📚 Explore My Work
+## 🖼️ See My Actual Projects
 
-### 🎨 Design & Visual Communication
+**These are my uploaded outputs, not sample images.** Click the image or the clearly labeled link to view the full work.
 
-| Activity | Project | Explore |
-|:---:|---|---|
-| **01** | **Presentation Design Principles** — Practiced clear layouts and organized presentation content. | [View Activity 1](Activity-1-Presentation-Design-Principles/) |
-| **02** | **Color Palette and Typography** — Explored colors and fonts for readable designs. | [View Activity 2](Activity-2-Color-Palette-and-Typography/) |
-| **03** | **Social Media Infographics and Mini Project Documentation** — Created an infographic and documented a project. | [View Activity 3](Activity-3-Social-Media-Infographics-and-Documentation/) |
-| **04** | **Presentation Exam** — Completed a Canva presentation design activity. | [View Activity 4](Activity-4-Presentation-Exam/) |
+### Activity 1 · Presentation Design Principles
 
-<details>
-<summary><b>Preview selected visual projects</b></summary>
+[![Actual Activity 1 presentation design](Activity-1-Presentation-Design-Principles/Activity-1-Presentation-Design.png)](Activity-1-Presentation-Design-Principles/Activity-1-Presentation-Design.png)
 
-<br>
+**[View my Activity 1 page and reflection](Activity-1-Presentation-Design-Principles/)**
 
-**Activity 1 · Presentation Design**
+### Activity 2 · Color Palette and Typography
 
-<img src="Activity-1-Presentation-Design-Principles/Activity-1-Presentation-Design.png" alt="Activity 1 presentation design output" width="640">
+[![Actual Activity 2 design 1](Activity-2-Color-Palette-and-Typography/Color-and-Typography-1.png)](Activity-2-Color-Palette-and-Typography/)
 
-**Activity 3 · Social Media Infographic**
+**[See all four of my Activity 2 designs](Activity-2-Color-Palette-and-Typography/)**
 
-<img src="Activity-3-Social-Media-Infographics-and-Documentation/Infographic_MALOTO.png" alt="Activity 3 infographic output" width="520">
+### Activity 3 · Social Media Infographic
 
-</details>
+[![Actual Activity 3 infographic](Activity-3-Social-Media-Infographics-and-Documentation/Infographic_MALOTO.png)](Activity-3-Social-Media-Infographics-and-Documentation/Infographic_MALOTO.png)
 
-### 🤖 AI, Web Design & Professional Development
+**[View Activity 3 and its documentation](Activity-3-Social-Media-Infographics-and-Documentation/)**
 
-| Activity | Project | Explore |
-|:---:|---|---|
-| **05** | **AI Tools Activity** — Improved an AI-generated image using a more detailed prompt. | [View Activity 5](Activity-5-AI-Tools-Activity/) |
-| **06** | **Making a Website: BP AWARE** — Created a blood pressure education website. | [View Activity 6](Activity-6-Making-a-Website/) |
-| **07** | **Resume Generating** — Compared nursing student resumes made with two AI tools. | [View Activity 7](Activity-7-Resume-Generating/) |
+### Activities 4–7 · Open My Submitted Work
 
-<div align="center">
+| Activity | Open my actual output | Read my reflection |
+|---|---|---|
+| **04 · Presentation Exam** | **[🎨 OPEN MY CANVA PRESENTATION](https://canva.link/rflj768aiskkt9x)** | [Activity 4](Activity-4-Presentation-Exam/) |
+| **05 · AI Tools Activity** | **[🖼️ OPEN MY AI IMAGE COMPARISON PDF](https://raw.githubusercontent.com/dabidibb/Elective-/main/Activity-5-AI-Tools-Activity/Activity-5-AI-Tools-Maloto.pdf)** | [Activity 5](Activity-5-AI-Tools-Activity/) |
+| **06 · BP AWARE Website** | **[🌐 OPEN MY WEBSITE PROJECT](https://replit.com/@dabidib/BP-AWARE-Website)** · [Submission PDF](https://raw.githubusercontent.com/dabidibb/Elective-/main/Activity-6-Making-a-Website/Activity-6-Website-Maloto.pdf) | [Activity 6](Activity-6-Making-a-Website/) |
+| **07 · Resume Generating** | **[📄 OPEN MY RESUME COMPARISON PDF](https://raw.githubusercontent.com/dabidibb/Elective-/main/Activity-7-Resume-Generating/Activity-7-Resume-Maloto.pdf)** | [Activity 7](Activity-7-Resume-Generating/) |
 
-### 🩺 Featured Project · BP AWARE
-
-**A digital health education website focused on blood pressure awareness and hypertension.**
-
-[**Explore BP AWARE Project**](Activity-6-Making-a-Website/) · [**View Website Source**](Activity-6-Making-a-Website/index.html)
-
-</div>
+> **For visitors:** The images above display directly on this page. The PDF links open the submitted documents. Each activity page also includes the description and learning reflection required for GE 4120.
 
 ---
 
