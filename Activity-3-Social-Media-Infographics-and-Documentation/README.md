@@ -2,6 +2,14 @@
 
 **Course:** GE 4120 — The 21st Century IT Skills
 
+## 🖼️ My actual infographic
+
+![My Activity 3 infographic](Infographic_MALOTO.png)
+
+**[Open the full-size infographic](Infographic_MALOTO.png)** · **[Open my project documentation PDF](https://raw.githubusercontent.com/dabidibb/Elective-/main/Activity-3-Social-Media-Infographics-and-Documentation/Mini-Project-Documentation-Maloto.pdf)**
+
+---
+
 ## About this activity
 This activity focuses on creating a social media infographic and documenting the work done for a mini project.
 
