@@ -7,6 +7,14 @@ My instructor asked us to submit the link to our Canva activity.
 
 **[Open my Activity 4 Canva project](https://canva.link/rflj768aiskkt9x)**
 
+## 🎨 View my actual Canva presentation
+
+### **[CLICK HERE TO OPEN MY PRESENTATION](https://canva.link/rflj768aiskkt9x)**
+
+*This activity was submitted as a Canva link. It opens outside GitHub.*
+
+---
+
 ## About this activity
 This activity was completed in Canva. The project can be viewed through the link above.
 
