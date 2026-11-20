@@ -19,4 +19,6 @@ Creating the BP AWARE website helped me understand how technology can be used to
 The complete standalone website is included as `index.html`, with its HTML, CSS, and JavaScript together in one file. It includes an interactive blood pressure checker and a short quiz.
 
 ## Submitted activity PDF
-The original PDF contains the website objectives, screenshots, and reflection. **The PDF still needs to be uploaded to this folder.**
+The original PDF contains the website objectives, screenshots, and reflection.
+
+**[View my complete Activity 6 PDF](Maloto_activity%206.pdf)**
