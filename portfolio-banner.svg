@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Jan Dave P. Maloto GE 4120 Digital Portfolio banner">
+<defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#102D4D"/><stop offset="1" stop-color="#087F87"/></linearGradient><pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#ffffff" opacity=".13"/></pattern></defs>
+<rect width="1200" height="320" rx="22" fill="url(#g)"/><rect width="1200" height="320" rx="22" fill="url(#dots)"/>
+<circle cx="1060" cy="145" r="165" fill="none" stroke="#ffffff" stroke-opacity=".14" stroke-width="2"/><circle cx="1060" cy="145" r="112" fill="none" stroke="#ffffff" stroke-opacity=".2" stroke-width="2"/>
+<path d="M950 152h42l18-27 25 62 26-43 15 8h70" fill="none" stroke="#6DE0D9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="72" y="75" font-family="Arial,sans-serif" font-size="19" letter-spacing="5" fill="#A6E7E4">GE 4120 · DIGITAL PORTFOLIO</text>
+<text x="70" y="155" font-family="Arial,sans-serif" font-weight="700" font-size="57" fill="#FFFFFF">JAN DAVE P. MALOTO</text>
+<rect x="72" y="181" width="74" height="5" rx="2" fill="#6DE0D9"/>
+<text x="72" y="229" font-family="Arial,sans-serif" font-size="23" fill="#E5F4F7">Fourth-Year Bachelor of Science in Nursing</text>
+<text x="72" y="266" font-family="Arial,sans-serif" font-size="20" fill="#C1E1E8">Ateneo de Davao University  •  Design  •  AI  •  Health Education</text></svg>
