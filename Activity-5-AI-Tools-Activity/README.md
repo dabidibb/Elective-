@@ -14,4 +14,6 @@ For this activity, I used ChatGPT to create an image. I started with a simple pr
 I learned that the words I use in an AI prompt can greatly affect the result. My first prompt was too simple, so the image did not fully show what I wanted. I improved it by adding details about the boy, the moon, the stars, and the background. The improved picture matched my idea better and showed more emotion. I can use this skill when creating images or educational materials with AI in the future.
 
 ## Submitted activity
-The original submission contains the two generated images, the prompts, and the comparison. **The PDF still needs to be uploaded to this folder.**
+The original submission contains the two generated images, the prompts, and the comparison.
+
+**[View my complete Activity 5 PDF](ACTIVITY%205_%20AI%20TOOLS%20ACTIVITY.pdf)**
