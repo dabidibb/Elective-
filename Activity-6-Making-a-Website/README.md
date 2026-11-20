@@ -2,6 +2,16 @@
 
 **Course:** GE 4120 — The 21st Century IT Skills
 
+## 🌐 View my actual BP AWARE website
+
+### **[CLICK HERE TO OPEN MY BP AWARE WEBSITE ON REPLIT](https://replit.com/@dabidib/BP-AWARE-Website)**
+
+### **[OPEN MY ACTIVITY 6 SUBMISSION PDF](https://raw.githubusercontent.com/dabidibb/Elective-/main/Activity-6-Making-a-Website/Activity-6-Website-Maloto.pdf)**
+
+*The Replit link opens the website project. The PDF shows my submitted work. The `index.html` file is source code, not the live website.*
+
+---
+
 ## About this activity
 BP AWARE is a blood pressure awareness website made to help people understand blood pressure readings, proper measurement, risk factors, prevention, and management of hypertension. It encourages healthy habits and reminds people when to seek medical attention.
 
