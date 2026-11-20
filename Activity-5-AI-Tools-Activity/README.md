@@ -2,6 +2,14 @@
 
 **Course:** GE 4120 — The 21st Century IT Skills
 
+## 🖼️ View my actual AI image comparison
+
+### **[CLICK HERE TO OPEN MY COMPLETE ACTIVITY 5 PDF](https://raw.githubusercontent.com/dabidibb/Elective-/main/Activity-5-AI-Tools-Activity/Activity-5-AI-Tools-Maloto.pdf)**
+
+*The PDF contains my original and improved AI images, prompts, and comparison. This link opens the document rather than GitHub code.*
+
+---
+
 ## About this activity
 For this activity, I used ChatGPT to create an image. I started with a simple prompt about a boy fishing and then improved my prompt by adding more specific details. I compared the original and improved results.
 
