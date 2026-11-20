@@ -2,6 +2,14 @@
 
 **Course:** GE 4120 — The 21st Century IT Skills
 
+## 🖼️ My actual presentation design
+
+![My Activity 1 presentation design](Activity-1-Presentation-Design.png)
+
+**[Open the full-size original image](Activity-1-Presentation-Design.png)**
+
+---
+
 ## About this activity
 This activity focuses on the basic principles of presentation design and how to make a presentation clear, organized, and easy to understand.
 
