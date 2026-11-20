@@ -2,6 +2,14 @@
 
 **Course:** GE 4120 — The 21st Century IT Skills
 
+## 📄 View my actual resume designs and comparison
+
+### **[CLICK HERE TO OPEN MY COMPLETE ACTIVITY 7 PDF](https://raw.githubusercontent.com/dabidibb/Elective-/main/Activity-7-Resume-Generating/Activity-7-Resume-Maloto.pdf)**
+
+*The PDF contains my resume outputs and comparison. This link opens the document rather than GitHub code.*
+
+---
+
 ## About this activity
 I used ChatGPT and Claude AI to create a one-page nursing student resume from the same personal information. I compared their outputs based on structure, clarity, formatting, and overall quality.
 
