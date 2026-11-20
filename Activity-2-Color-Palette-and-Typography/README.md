@@ -2,6 +2,22 @@
 
 **Course:** GE 4120 — The 21st Century IT Skills
 
+## 🖼️ My actual color and typography designs
+
+### Design 1
+![My color and typography design 1](Color-and-Typography-1.png)
+
+### Design 2
+![My color and typography design 2](Color-and-Typography-2.png)
+
+### Design 3
+![My color and typography design 3](Color-and-Typography-3.png)
+
+### Design 4
+![My color and typography design 4](Color-and-Typography-4.png)
+
+---
+
 ## About this activity
 This activity explores how colors and font choices affect the appearance and readability of a design.
 
