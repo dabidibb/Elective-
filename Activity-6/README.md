@@ -11,5 +11,12 @@ The submitted project shows information about hypertension and a website created
 ## What have I learned?
 Creating the BP AWARE website helped me understand how technology can be used to share health information. As a fourth-year nursing student, I learned how to present topics such as blood pressure monitoring, risk factors, and prevention in a way that people can understand. One challenge in making a website is arranging the information so it is both useful and interesting. I can improve by reviewing the layout and making the information easier to navigate. I can use these skills to educate patients and communities in the future.
 
-## Submitted activity and website files
-The original PDF contains the website objective, screenshots, Replit screenshots, and reflection. **The PDF and working website source code still need to be added to this folder.** Screenshots alone do not make the website runnable.
+## Open the working website
+- **[View the BP AWARE website source (index.html)](index.html)**
+- **[Open the website in a browser using GitHub Pages](https://dabidibb.github.io/Elective-/Activity-6/)** *(works after GitHub Pages is enabled for this repository)*
+- [Original Replit project](https://replit.com/@dabidib/BP-AWARE-Website)
+
+The complete standalone website is included as `index.html`, with its HTML, CSS, and JavaScript together in one file. It includes an interactive blood pressure checker and a short quiz.
+
+## Submitted activity PDF
+The original PDF contains the website objectives, screenshots, and reflection. **The PDF still needs to be uploaded to this folder.**
