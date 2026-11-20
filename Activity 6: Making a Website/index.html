@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BP AWARE is a nursing advocacy website about blood pressure awareness, accurate measurement, prevention, monitoring, and when to seek care.">
+<title>BP AWARE | Know Your Numbers</title>
+<style>
+:root{
+  --navy:#092b49;--blue:#0b6fae;--cyan:#18a7c9;--sky:#eaf7fb;
+  --red:#d63c50;--red2:#a91f35;--green:#16875b;--gold:#e5a62a;
+  --ink:#17344d;--muted:#62778a;--white:#fff;--bg:#f5f9fc;
+  --line:#dce7ef;--shadow:0 18px 50px rgba(15,48,73,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.topbar{background:var(--navy);color:#dcebf5;font-size:.82rem;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:20px}
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.navin{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-weight:950;font-size:1.45rem;letter-spacing:-.5px;color:var(--navy)}
+.brand b{color:var(--red)}
+.links{display:flex;gap:18px;align-items:center;font-size:.84rem;font-weight:800;color:#3b5970}
+.links a:hover{color:var(--blue)}
+.navcta{background:var(--red);color:#fff!important;padding:10px 15px;border-radius:999px}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#072946 0%,#0b5889 52%,#0d86ae 100%);color:#fff;padding:78px 0 88px}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.12)}
+.hero:before{width:520px;height:520px;right:-180px;top:-220px}.hero:after{width:300px;height:300px;left:-180px;bottom:-160px}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:60px;align-items:center;position:relative;z-index:2}
+.eyebrow{font-size:.78rem;font-weight:900;letter-spacing:2.4px;color:#a9e8f2;margin-bottom:14px}
+h1{font-size:clamp(3rem,6vw,5.7rem);line-height:.98;letter-spacing:-3px;margin-bottom:22px}
+h1 span{color:#ffb8c0}
+.hero p.lead{font-size:1.12rem;color:#e4f2f8;max-width:650px}
+.actions{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:12px;font-weight:900;border:1px solid transparent;cursor:pointer}
+.btn-light{background:#fff;color:var(--navy)}.btn-red{background:var(--red);color:#fff}.btn-outline{border-color:#77cfe1;color:#fff}
+.hero-visual{position:relative;min-height:390px;display:grid;place-items:center}
+.monitor{width:min(360px,90%);background:#fff;border-radius:28px;padding:24px;box-shadow:0 25px 70px rgba(0,0,0,.25);color:var(--navy);position:relative}
+.monitor:before{content:"";position:absolute;left:-48px;top:95px;width:100px;height:120px;border:13px solid #ef5a68;border-right:0;border-radius:55px 0 0 55px;transform:rotate(-8deg)}
+.monitor-screen{background:#eef7fb;border-radius:19px;padding:24px;text-align:center}
+.monitor-screen small{color:#688095;font-weight:800}.reading{font-size:4.4rem;font-weight:950;line-height:1;color:var(--blue);margin:8px 0}.unit{font-size:.8rem;color:#71879a;font-weight:800}
+.pulse{margin-top:15px;display:flex;align-items:center;gap:10px;justify-content:center;color:var(--red);font-weight:900}
+.pulse i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 7px #d63c5022}
+section{padding:82px 0}
+.section-title{max-width:780px;margin:0 auto 42px;text-align:center}
+.section-title .eyebrow{color:var(--blue)}
+.section-title h2{font-size:clamp(2rem,4vw,3rem);line-height:1.08;letter-spacing:-1.3px;color:var(--navy);margin-bottom:12px}
+.section-title p{color:var(--muted)}
+.band{background:var(--sky)}
+.stat-strip{margin-top:-42px;position:relative;z-index:5}
+.stats{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:22px;display:grid;grid-template-columns:repeat(3,1fr);overflow:hidden}
+.stat{padding:27px;text-align:center;border-right:1px solid var(--line)}.stat:last-child{border:0}
+.stat strong{display:block;color:var(--blue);font-size:2rem;line-height:1.1}.stat span{font-size:.83rem;color:var(--muted);font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 8px 28px rgba(15,48,73,.055)}
+.card h3{color:var(--navy);margin:8px 0 7px;font-size:1.12rem}.card p{color:var(--muted);font-size:.94rem}
+.iconbox{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#e9f6fb;font-size:1.45rem}
+.callout{border-radius:20px;padding:25px;background:linear-gradient(135deg,#092b49,#126d9e);color:#fff;box-shadow:var(--shadow)}
+.callout h3{font-size:1.45rem;margin-bottom:8px}.callout p{color:#d8edf6}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:25px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.bp-anatomy{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px;align-items:center}
+.heart-art{min-height:330px;border-radius:28px;background:radial-gradient(circle at 50% 45%,#fff 0 18%,#dceff7 19% 42%,#b8dce9 43% 55%,transparent 56%),linear-gradient(145deg,#e9f7fb,#ccebf3);display:grid;place-items:center;font-size:8rem;color:var(--red);position:relative;overflow:hidden}
+.heart-art:after{content:"";position:absolute;width:210px;height:210px;border:2px dashed #0b6fae66;border-radius:50%}
+.number-panel{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.number{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.number .big{font-size:2.8rem;font-weight:950;color:var(--blue)}.number small{color:var(--muted);font-weight:800}
+.table-wrap{overflow:auto;background:#fff;border-radius:20px;border:1px solid var(--line);box-shadow:0 8px 28px rgba(15,48,73,.05)}
+table{border-collapse:collapse;width:100%;min-width:760px}th,td{padding:17px 18px;text-align:left;border-bottom:1px solid var(--line)}th{background:var(--navy);color:#fff;font-size:.82rem;text-transform:uppercase;letter-spacing:.7px}td{font-size:.92rem}tr:last-child td{border:0}.tag{display:inline-block;padding:5px 9px;border-radius:999px;font-size:.72rem;font-weight:900}.normal{background:#e3f5ea;color:#14683f}.elevated{background:#fff3d6;color:#8a6100}.stage1{background:#fff0df;color:#a45500}.stage2{background:#ffe4e5;color:#a51d2d}.severe{background:#f2d9df;color:#7d1628}
+.note{margin-top:14px;color:var(--muted);font-size:.82rem}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;position:relative}
+.stepnum{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-weight:950;margin-bottom:13px}
+.step h3{font-size:1rem;color:var(--navy);margin-bottom:5px}.step p{font-size:.83rem;color:var(--muted)}
+.dont{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}.dont .card{border-top:4px solid var(--red)}
+.habits{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.habit{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.habit b{font-size:1.05rem;color:var(--navy)}.habit p{font-size:.86rem;color:var(--muted);margin-top:5px}
+.dashboard{display:grid;grid-template-columns:1fr .75fr;gap:25px;align-items:stretch}
+.checker{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:15px}label{display:block;font-weight:900;font-size:.84rem;color:#3b5970}input{width:100%;margin-top:7px;padding:13px;border:1px solid #cbd9e3;border-radius:10px;outline:none}input:focus{border-color:var(--blue);box-shadow:0 0 0 3px #0b6fae18}
+.checkbtn{margin-top:17px;background:var(--blue);color:#fff;padding:13px 18px;border-radius:11px;font-weight:900;cursor:pointer}.result{display:none;margin-top:18px;border-radius:15px;padding:18px;background:#eef8fb}.result strong{font-size:1.35rem;color:var(--blue)}
+.warning{background:linear-gradient(135deg,#fff1f2,#fff8f8);border:1px solid #f0bbc2;border-left:6px solid var(--red);border-radius:20px;padding:25px}.warning h3{color:#8c1d2d}.warning ul{padding-left:20px;margin-top:9px}
+.journal td{height:52px}.journal td,.journal th{text-align:center}.journal td:first-child{text-align:left}
+.nurse{display:grid;grid-template-columns:.75fr 1.25fr;gap:25px;align-items:stretch}.nurse-art{background:linear-gradient(145deg,#dff4fa,#effaff);border-radius:25px;display:grid;place-items:center;min-height:390px}.nurse-person{text-align:center}.nurse-person .emoji{font-size:8rem}.nurse-person strong{display:block;color:var(--navy);font-size:1.2rem}
+.role-list{display:grid;grid-template-columns:1fr 1fr;gap:15px}.role{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.role b{color:var(--blue)}.role p{font-size:.84rem;color:var(--muted);margin-top:4px}
+.myths{display:grid;grid-template-columns:1fr 1fr;gap:18px}.myth{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.myth .m{color:var(--red);font-weight:950}.myth .f{color:var(--green);font-weight:950;margin-top:10px}
+.emergency{background:var(--navy);color:#fff;border-radius:25px;padding:35px}.emergency h2{font-size:2rem}.emergency p{color:#d6e7f1}.symptoms{display:flex;flex-wrap:wrap;gap:9px;margin:17px 0}.symptoms span{background:#ffffff12;border:1px solid #ffffff25;padding:8px 11px;border-radius:999px;font-size:.8rem;font-weight:800}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px 20px;margin:10px 0}.faq summary{cursor:pointer;font-weight:900;color:var(--navy)}.faq p{color:var(--muted);padding-top:9px}
+.quiz{max-width:850px;margin:auto}.q{background:#fff;border:1px solid var(--line);border-radius:17px;padding:20px;margin:13px 0}.q p{font-weight:900}.q label{font-weight:500;margin:9px 0;cursor:pointer}.q input{width:auto;margin-right:7px}
+.quiz-result{margin-top:15px;font-weight:900;color:var(--blue)}
+.sourcebox{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px}.sourcebox p{font-size:.84rem;color:var(--muted);margin:6px 0}.sourcebox a{color:var(--blue);font-weight:800}
+footer{background:#061f35;color:#fff;padding:48px 0}.footgrid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.footerbrand{font-size:1.6rem;font-weight:950}.footerbrand b{color:#ff8390}footer p{color:#a9c0cf;font-size:.84rem;margin-top:8px}footer .small{border-top:1px solid #ffffff18;margin-top:30px;padding-top:20px}
+@media(max-width:1000px){.steps{grid-template-columns:repeat(3,1fr)}.habits{grid-template-columns:1fr 1fr}.hero-grid,.bp-anatomy,.dashboard,.nurse{grid-template-columns:1fr}.hero-visual{min-height:330px}.cards,.three{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.links{display:none}.topbar .container{justify-content:center}.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}.cards,.three,.two,.dont,.myths,.role-list,.footgrid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.number-panel,.fields{grid-template-columns:1fr}section{padding:60px 0}h1{letter-spacing:-2px}.hero{padding:60px 0}.heart-art{min-height:250px}}
+@media(max-width:480px){.steps,.habits{grid-template-columns:1fr}.actions .btn{width:100%}.monitor{width:100%}.reading{font-size:3.5rem}}
+
+/* ===== BP AWARE VISUAL OVERHAUL ===== */
+:root{
+  --navy:#061a33;--navy2:#0b3157;--blue:#0879c9;--cyan:#16c5df;--sky:#e9f9ff;
+  --red:#f04f67;--pink:#ff8ea0;--green:#18a66f;--gold:#ffc857;
+  --ink:#102b45;--muted:#61778c;--white:#fff;--bg:#f4f9fc;
+  --line:#d7e5ef;--shadow:0 24px 70px rgba(5,35,61,.13);
+}
+body{background:
+ radial-gradient(circle at 10% 4%,rgba(22,197,223,.10),transparent 22rem),
+ radial-gradient(circle at 92% 22%,rgba(240,79,103,.08),transparent 24rem),
+ #f4f9fc;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;z-index:-1;background-image:radial-gradient(#0b6fae 1px,transparent 1px);background-size:28px 28px}
+.container{width:min(1220px,92%)}
+.topbar{background:linear-gradient(90deg,#04172d,#0a416b,#04172d);border-bottom:1px solid rgba(255,255,255,.12);padding:9px 0}
+.topbar .container{letter-spacing:.04em}
+nav{background:rgba(248,253,255,.82);box-shadow:0 12px 35px rgba(4,31,52,.08);border-bottom:1px solid rgba(8,121,201,.12)}
+.navin{min-height:78px}.brand{font-size:1.65rem;letter-spacing:-1px;display:flex;align-items:center;gap:8px}.brand:before{content:"♥";display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--red),#ff7488);color:#fff;font-size:.9rem;box-shadow:0 8px 18px #f04f6740}.brand b{color:var(--red)}
+.links{gap:7px}.links a{padding:9px 10px;border-radius:10px;transition:.2s}.links a:hover{background:#e8f7fd;color:var(--blue);transform:translateY(-1px)}.navcta{background:linear-gradient(135deg,var(--red),#d72f4b);box-shadow:0 10px 22px #f04f6740!important;padding:11px 16px!important}
+.hero{padding:105px 0 120px;background:
+ radial-gradient(circle at 83% 28%,rgba(22,197,223,.45),transparent 20rem),
+ radial-gradient(circle at 72% 95%,rgba(240,79,103,.25),transparent 18rem),
+ linear-gradient(135deg,#04172d 0%,#07345b 42%,#0879a9 100%);min-height:650px}
+.hero:before{width:700px;height:700px;right:-240px;top:-270px;border:1px solid rgba(255,255,255,.14);box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(255,255,255,.018)}
+.hero:after{width:420px;height:420px;left:-240px;bottom:-230px;border:1px dashed rgba(255,255,255,.18)}
+.hero-grid{grid-template-columns:1.05fr .95fr;gap:70px}.eyebrow{font-size:.75rem;letter-spacing:3px}.hero .eyebrow{color:#8eeafa;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);display:inline-flex;padding:8px 12px;border-radius:999px}
+h1{font-size:clamp(3.4rem,7vw,6.7rem);letter-spacing:-5px;text-shadow:0 12px 35px rgba(0,0,0,.2)}h1 span{color:#ff91a0}.hero p.lead{font-size:1.18rem;line-height:1.8;max-width:690px;color:#dff5fb}.actions .btn{border-radius:14px;padding:14px 20px;box-shadow:0 12px 25px rgba(0,0,0,.15)}.btn-light{background:#fff}.btn-red{background:linear-gradient(135deg,#ff5c74,#d92e49)}.btn-outline{background:rgba(255,255,255,.07);backdrop-filter:blur(10px)}
+.hero-visual{min-height:450px}.hero-visual:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.16),rgba(255,255,255,.02) 60%,transparent 61%);filter:blur(.2px)}
+.monitor{width:min(400px,92%);border-radius:32px;padding:27px;background:linear-gradient(145deg,#fff,#e9f8fc);box-shadow:0 35px 100px rgba(0,0,0,.32);border:8px solid rgba(255,255,255,.32);transform:rotate(2deg);animation:float 5s ease-in-out infinite}
+.monitor:after{content:"BP AWARE";position:absolute;right:22px;top:15px;color:#7891a3;font-size:.65rem;font-weight:950;letter-spacing:1.5px}.monitor-screen{background:linear-gradient(145deg,#f5fdff,#d9f2f8);border:1px solid #c5e5ee;box-shadow:inset 0 1px 0 #fff;border-radius:22px;padding:27px}.reading{font-size:5rem;background:linear-gradient(135deg,var(--blue),var(--cyan));-webkit-background-clip:text;color:transparent}.pulse i{animation:pulse 1.6s infinite}.hero-visual:after{content:"120 / 80\A\AKNOW • MEASURE • ACT";white-space:pre;text-align:center;position:absolute;bottom:2px;right:5%;font-size:.68rem;letter-spacing:2px;font-weight:950;color:#b9ecf5;line-height:1.7;transform:rotate(-5deg)}
+.stat-strip{margin-top:-55px}.stats{border-radius:28px;box-shadow:0 25px 70px rgba(6,40,67,.15);background:rgba(255,255,255,.92);backdrop-filter:blur(12px);position:relative}.stats:before{content:"";position:absolute;inset:0;border-radius:28px;padding:1px;background:linear-gradient(90deg,#18c5df,#fff,#f04f67);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}.stat{padding:30px 24px}.stat strong{font-size:2.45rem;background:linear-gradient(135deg,var(--blue),var(--cyan));-webkit-background-clip:text;color:transparent}.stat:nth-child(2) strong{background:linear-gradient(135deg,var(--red),#ff9b77);-webkit-background-clip:text}.stat:nth-child(3) strong{background:linear-gradient(135deg,#16875b,#39c99a);-webkit-background-clip:text}
+section{padding:100px 0;position:relative}section:nth-of-type(even):after{content:"";position:absolute;right:-180px;top:80px;width:360px;height:360px;border-radius:50%;border:1px solid rgba(8,121,201,.08);box-shadow:0 0 0 50px rgba(8,121,201,.025),0 0 0 100px rgba(8,121,201,.015);pointer-events:none}.band{background:linear-gradient(180deg,#eaf9ff 0%,#f5fbfe 100%)}
+.section-title{max-width:900px;margin-bottom:52px}.section-title .eyebrow{display:inline-block;color:var(--blue);background:#e6f7fd;border:1px solid #c6ebf5;padding:7px 11px;border-radius:999px}.section-title h2{font-size:clamp(2.35rem,4.5vw,3.7rem);letter-spacing:-2px;margin-top:12px}.section-title p{font-size:1.03rem}
+.cards{gap:22px}.card,.habit,.role,.myth,.checker,.faq details,.table-wrap,.sourcebox,.quiz{border-radius:24px;border:1px solid rgba(8,121,201,.13);box-shadow:0 14px 45px rgba(9,48,75,.075);transition:transform .25s,box-shadow .25s,border-color .25s}.card:hover,.habit:hover,.role:hover,.myth:hover{transform:translateY(-7px);box-shadow:0 24px 55px rgba(9,48,75,.12);border-color:#9edbea}.card{padding:28px;background:linear-gradient(145deg,#fff,#f9fdff)}.iconbox{width:55px;height:55px;border-radius:17px;background:linear-gradient(135deg,#e4f8fd,#d4eef7);box-shadow:inset 0 1px 0 #fff;color:var(--blue)}
+.bp-anatomy{gap:55px}.heart-art{min-height:380px;border-radius:34px;background:radial-gradient(circle at 50% 50%,#fff 0 17%,#e4f8fc 18% 38%,#b8e5ef 39% 52%,transparent 53%),linear-gradient(145deg,#eafaff,#c7edf5);box-shadow:inset 0 0 0 1px #fff,0 24px 60px rgba(8,121,201,.12);font-size:9rem}.heart-art:before{content:"SYSTOLIC  ♥  DIASTOLIC";position:absolute;top:24px;left:28px;right:28px;text-align:center;font-size:.7rem;letter-spacing:2px;color:#42829c;font-weight:950}.heart-art:after{width:250px;height:250px;border-color:#0879c955;animation:spin 18s linear infinite}
+.number-panel{gap:20px}.number{border-radius:23px;background:linear-gradient(145deg,#fff,#f3fbfe);box-shadow:0 14px 35px rgba(9,48,75,.07);position:relative;overflow:hidden}.number:after{content:"";position:absolute;width:80px;height:80px;border-radius:50%;right:-35px;bottom:-35px;background:#16c5df18}.number .big{font-size:3.4rem}
+.table-wrap{overflow:hidden}.table-wrap table{background:#fff}.table-wrap tbody tr{transition:.18s}.table-wrap tbody tr:hover{background:#f1fbfe;transform:scale(1.003)}th{background:linear-gradient(135deg,#061a33,#0b5d88);padding:19px}td{padding:19px}.tag{padding:7px 11px}
+.steps{gap:15px;position:relative}.steps:before{content:"";position:absolute;left:5%;right:5%;top:38px;height:2px;background:linear-gradient(90deg,var(--cyan),var(--blue),var(--red));opacity:.22}.step{z-index:1;background:rgba(255,255,255,.92);padding:22px;border-radius:22px;box-shadow:0 14px 35px rgba(9,48,75,.07);backdrop-filter:blur(8px)}.stepnum{box-shadow:0 8px 18px #0879c936;background:linear-gradient(135deg,var(--blue),var(--cyan));position:relative;z-index:2}.dont .card{border-top:5px solid var(--red)}
+.habits{gap:18px}.habit{background:linear-gradient(145deg,#fff,#f5fcfe);padding:24px}.habit:before{content:"✓";float:right;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#e3f8ef;color:var(--green);font-weight:950}
+.dashboard{gap:30px}.checker{background:linear-gradient(145deg,#fff,#f5fcff);padding:32px}.checker:before{content:"LIVE EDUCATION TOOL";display:inline-block;padding:6px 9px;border-radius:999px;background:#e6f8fc;color:var(--blue);font-size:.66rem;font-weight:950;letter-spacing:1.5px;margin-bottom:12px}.fields input{border-radius:14px;background:#fbfeff}.checkbtn{border:0;border-radius:13px;background:linear-gradient(135deg,var(--blue),var(--cyan));box-shadow:0 12px 25px #0879c92d}.result{border:1px solid #bce8f2;background:linear-gradient(145deg,#effcff,#e3f8fc)}
+.warning{box-shadow:0 18px 45px rgba(240,79,103,.12);border-radius:25px}.warning:before{content:"⚠";font-size:2.2rem;float:right}.journal{overflow:hidden}.journal table{min-width:650px}
+.nurse{gap:35px}.nurse-art{min-height:430px;border-radius:34px;background:radial-gradient(circle at 50% 30%,#fff 0 12%,transparent 13%),linear-gradient(145deg,#d8f5fb,#effcff);box-shadow:0 25px 65px rgba(8,121,201,.10);position:relative;overflow:hidden}.nurse-art:before,.nurse-art:after{content:"";position:absolute;border-radius:50%;border:1px dashed #0879c944}.nurse-art:before{width:300px;height:300px}.nurse-art:after{width:450px;height:450px}.nurse-person .emoji{font-size:9rem;filter:drop-shadow(0 18px 20px rgba(8,121,201,.15))}.role-list{gap:16px}.role{padding:21px;background:linear-gradient(145deg,#fff,#f8fdff)}
+.myths{gap:20px}.myth{padding:25px;background:linear-gradient(145deg,#fff,#fbfdff);position:relative;overflow:hidden}.myth:before{content:"?";position:absolute;right:20px;top:-18px;font-size:7rem;font-weight:950;color:#0879c908}.myth .m{font-size:1.02rem}.myth .f{line-height:1.7}
+.faq details{padding:19px 22px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px)}.faq details[open]{border-color:#9bdce9;box-shadow:0 18px 45px rgba(8,121,201,.08)}.faq summary{color:var(--navy)}
+.emergency{background:radial-gradient(circle at 88% 15%,#f04f6744,transparent 18rem),linear-gradient(135deg,#04172d,#092f50);box-shadow:0 25px 70px rgba(4,23,45,.22);border:1px solid rgba(255,255,255,.1)}.emergency h2{font-size:2.5rem}.symptoms span{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.16);backdrop-filter:blur(8px)}
+.quiz{background:linear-gradient(145deg,#fff,#f5fcff);padding:30px}.q{padding:20px 0;border-bottom:1px dashed #cbdde7}.q p{font-weight:950;color:var(--navy);margin-bottom:10px}.q label{display:block;padding:8px 0;font-weight:650}.q input{width:auto;margin-right:8px}.quiz-result{margin-top:18px;padding:15px;border-radius:14px;background:#eaf8fc;color:var(--blue);font-weight:900}
+.sourcebox{background:linear-gradient(145deg,#fff,#f7fcfe);padding:30px}.sourcebox p{padding:13px 0;border-bottom:1px solid #e0edf3}.sourcebox p:last-child{border-bottom:0}
+footer{background:linear-gradient(135deg,#04172d,#082d4d);color:#d7e9f2;padding:60px 0}.footerbrand{font-size:2rem;font-weight:950;color:#fff}.footerbrand b{color:#ff7387}.footgrid{display:flex;justify-content:space-between;gap:30px}.small{margin-top:28px;padding-top:20px;border-top:1px solid #ffffff16;color:#8eb0c2}
+@keyframes float{0%,100%{transform:rotate(2deg) translateY(0)}50%{transform:rotate(-1deg) translateY(-10px)}}@keyframes pulse{0%{box-shadow:0 0 0 0 #f04f6760}70%{box-shadow:0 0 0 10px #f04f6700}100%{box-shadow:0 0 0 0 #f04f6700}}@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:980px){.links{display:none}.hero-grid,.bp-anatomy,.dashboard,.nurse{grid-template-columns:1fr}.hero{padding:80px 0 105px}.hero-visual{min-height:390px}.steps{grid-template-columns:repeat(3,1fr)}.steps:before{display:none}.habits{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:repeat(2,1fr)}.three{grid-template-columns:1fr 1fr}.role-list{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){h1{letter-spacing:-3px}.hero{padding:65px 0 90px}.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}.cards,.two,.three,.number-panel,.dont,.habits,.myths,.role-list,.fields{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.heart-art{min-height:290px;font-size:6rem}.monitor{transform:none}.footgrid{flex-direction:column}.section-title{text-align:left}.section-title h2{letter-spacing:-1.2px}}
+
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="container"><span>🩺 NURSING ADVOCACY • BLOOD PRESSURE EDUCATION</span><span>Educational website • Not a diagnosis</span></div></div>
+
+<nav><div class="container navin">
+  <a class="brand" href="#home">BP <b>AWARE</b></a>
+  <div class="links">
+    <a href="#learn">Learn</a><a href="#numbers">Numbers</a><a href="#measure">Measure</a><a href="#prevent">Prevent</a><a href="#checker">Check</a><a href="#nursing">Nursing</a><a href="#quiz">Quiz</a><a class="navcta" href="#emergency">Urgent Help</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="home">
+<div class="container hero-grid">
+  <div>
+    <div class="eyebrow">KNOW YOUR NUMBERS • PROTECT YOUR HEALTH</div>
+    <h1>Blood pressure<br><span>starts with awareness.</span></h1>
+    <p class="lead">A student nursing advocacy website designed to make blood pressure easier to understand—from the meaning of 120/80 to accurate home monitoring, prevention, and knowing when to seek help.</p>
+    <div class="actions"><a class="btn btn-light" href="#learn">Explore BP AWARE ↓</a><a class="btn btn-outline" href="#checker">Check a Reading</a></div>
+  </div>
+  <div class="hero-visual">
+    <div class="monitor">
+      <div class="monitor-screen"><small>EXAMPLE READING</small><div class="reading">120/80</div><div class="unit">mm Hg</div><div class="pulse">● NORMAL EXAMPLE</div></div>
+      <p style="margin-top:14px;color:#60778a;font-size:.8rem;text-align:center">Your blood pressure can change throughout the day. A healthcare professional interprets repeated readings in context.</p>
+    </div>
+  </div>
+</div>
+</header>
+
+<div class="stat-strip"><div class="container stats">
+  <div class="stat"><strong>1 in 3</strong><span>Adults aged 30–79 globally had hypertension in 2024</span></div>
+  <div class="stat"><strong>16.8M</strong><span>Estimated adults aged 30–79 with hypertension in the Philippines</span></div>
+  <div class="stat"><strong>19%</strong><span>Estimated proportion controlled among Filipinos aged 30–79 with hypertension</span></div>
+</div></div>
+
+<section id="learn"><div class="container">
+  <div class="section-title"><div class="eyebrow">01 • START HERE</div><h2>Why should we care about blood pressure?</h2><p>High blood pressure is common, often has no obvious symptoms, and can damage important organs over time. Knowing your numbers gives you a chance to act early.</p></div>
+  <div class="bp-anatomy">
+    <div class="heart-art">♥</div>
+    <div>
+      <div class="number-panel">
+        <div class="number"><div class="big">120</div><small>SYSTOLIC • TOP NUMBER</small><p style="margin-top:8px;color:#62778a;font-size:.88rem">Pressure when the heart contracts and pumps blood.</p></div>
+        <div class="number"><div class="big">80</div><small>DIASTOLIC • BOTTOM NUMBER</small><p style="margin-top:8px;color:#62778a;font-size:.88rem">Pressure when the heart relaxes between beats.</p></div>
+      </div>
+      <div class="callout" style="margin-top:18px"><h3>Blood pressure is not a “feeling.”</h3><p>You may have high blood pressure without noticeable symptoms. The only way to know your blood pressure is to have it measured.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="band" id="numbers"><div class="container">
+  <div class="section-title"><div class="eyebrow">02 • KNOW YOUR RANGE</div><h2>Read the numbers with confidence.</h2><p>These adult categories follow the 2025 AHA/ACC high blood pressure guideline. Diagnosis should be made by a qualified healthcare professional using appropriate measurements.</p></div>
+  <div class="table-wrap"><table>
+    <tr><th>Category</th><th>Systolic</th><th>Diastolic</th><th>What to do</th></tr>
+    <tr><td><span class="tag normal">NORMAL</span></td><td>&lt;120</td><td>and &lt;80</td><td>Maintain healthy habits and monitor as recommended.</td></tr>
+    <tr><td><span class="tag elevated">ELEVATED</span></td><td>120–129</td><td>and &lt;80</td><td>Focus on healthy habits and follow-up monitoring.</td></tr>
+    <tr><td><span class="tag stage1">STAGE 1</span></td><td>130–139</td><td>or 80–89</td><td>Discuss repeated readings with a healthcare professional.</td></tr>
+    <tr><td><span class="tag stage2">STAGE 2</span></td><td>≥140</td><td>or ≥90</td><td>Professional evaluation is important; treatment may be needed.</td></tr>
+    <tr><td><span class="tag severe">SEVERE</span></td><td>&gt;180</td><td>and/or &gt;120</td><td>Repeat promptly; follow urgent-care guidance, especially if symptoms are present.</td></tr>
+  </table></div>
+  <p class="note">Unit: mm Hg. The category is determined by whichever number is in the higher category. Pregnancy has different considerations and should be discussed with a healthcare professional.</p>
+</div></section>
+
+<section id="measure"><div class="container">
+  <div class="section-title"><div class="eyebrow">03 • MEASURE IT RIGHT</div><h2>Accuracy starts before you press “start.”</h2><p>Correct technique reduces avoidable errors and makes home readings more useful for you and your healthcare team.</p></div>
+  <div class="steps">
+    <div class="step"><div class="stepnum">1</div><h3>Prepare</h3><p>Avoid caffeine, smoking, alcohol and exercise for 30 minutes before measuring. Empty your bladder.</p></div>
+    <div class="step"><div class="stepnum">2</div><h3>Rest</h3><p>Sit quietly for at least 5 minutes. Avoid talking, phones and other distractions.</p></div>
+    <div class="step"><div class="stepnum">3</div><h3>Sit correctly</h3><p>Back supported, feet flat on the floor, legs uncrossed.</p></div>
+    <div class="step"><div class="stepnum">4</div><h3>Place cuff</h3><p>Use the correct-size cuff on bare skin above the elbow. Keep the arm supported at heart level.</p></div>
+    <div class="step"><div class="stepnum">5</div><h3>Measure twice</h3><p>Take two readings about one minute apart and stay still during the measurements.</p></div>
+    <div class="step"><div class="stepnum">6</div><h3>Record</h3><p>Write down the readings, date, time and useful notes. Bring the record to appointments.</p></div>
+  </div>
+  <div class="dont">
+    <div class="card"><h3>🚫 Don't talk</h3><p>Conversation during measurement can affect the reading.</p></div>
+    <div class="card"><h3>🚫 Don't measure over clothing</h3><p>The cuff should be placed on bare upper-arm skin.</p></div>
+    <div class="card"><h3>🚫 Don't guess cuff size</h3><p>A cuff that is too small can make the reading falsely high.</p></div>
+  </div>
+</div></section>
+
+<section class="band" id="prevent"><div class="container">
+  <div class="section-title"><div class="eyebrow">04 • PREVENT & MANAGE</div><h2>Build habits that support a healthier heart.</h2><p>Lifestyle changes are recommended to prevent or manage elevated blood pressure and hypertension. Medication, when prescribed, works alongside—not instead of—healthy habits.</p></div>
+  <div class="habits">
+    <div class="habit"><b>🥗 Heart-healthy eating</b><p>Choose a balanced eating pattern rich in vegetables, fruits, whole grains and other nutritious foods.</p></div>
+    <div class="habit"><b>🧂 Reduce sodium</b><p>Limit high-sodium foods and compare nutrition labels when possible.</p></div>
+    <div class="habit"><b>🚶 Move regularly</b><p>Build regular moderate physical activity into your week as appropriate for your health.</p></div>
+    <div class="habit"><b>⚖️ Healthy weight</b><p>Work toward and maintain a healthy weight with sustainable habits.</p></div>
+    <div class="habit"><b>😴 Prioritize sleep</b><p>Make adequate, consistent sleep part of your cardiovascular health routine.</p></div>
+    <div class="habit"><b>🧘 Manage stress</b><p>Use healthy coping strategies such as relaxation, activity and social connection.</p></div>
+    <div class="habit"><b>🚭 Avoid tobacco</b><p>Do not smoke or use tobacco products; seek support if quitting is difficult.</p></div>
+    <div class="habit"><b>🍷 Limit alcohol</b><p>If you drink, limiting alcohol can support healthier blood pressure.</p></div>
+  </div>
+  <div class="callout" style="margin-top:22px"><h3>Medication matters, too.</h3><p>Take prescribed blood pressure medicines exactly as directed. Do not stop, skip or change doses on your own. Talk with your healthcare professional about side effects or concerns.</p></div>
+</div></section>
+
+<section><div class="container">
+  <div class="section-title"><div class="eyebrow">05 • YOUR COMMUNITY</div><h2>Blood pressure awareness is a community issue.</h2><p>The 2025 global WHO profile estimates that 16.8 million adults aged 30–79 in the Philippines had hypertension in 2024. About 13.6 million were not controlled—showing why screening, education, treatment access and follow-up matter.</p></div>
+  <div class="three">
+    <div class="card"><div class="iconbox">🔎</div><h3>Find it</h3><p>Encourage routine BP checks, especially for adults who may be at increased cardiovascular risk.</p></div>
+    <div class="card"><div class="iconbox">📖</div><h3>Understand it</h3><p>Teach families what systolic and diastolic numbers mean and why repeated readings matter.</p></div>
+    <div class="card"><div class="iconbox">🤝</div><h3>Act on it</h3><p>Connect people with appropriate healthcare, lifestyle support, medication education and follow-up.</p></div>
+  </div>
+</div></section>
+
+<section class="band" id="checker"><div class="container">
+  <div class="section-title"><div class="eyebrow">06 • INTERACTIVE</div><h2>What does this reading suggest?</h2><p>Enter an adult BP reading for an educational category check. This tool does not diagnose hypertension.</p></div>
+  <div class="dashboard">
+    <div class="checker">
+      <div class="fields"><div><label for="sys">Systolic (top)</label><input id="sys" type="number" min="50" max="300" placeholder="e.g. 128"></div><div><label for="dia">Diastolic (bottom)</label><input id="dia" type="number" min="30" max="200" placeholder="e.g. 78"></div></div>
+      <button class="checkbtn" onclick="checkBP()">Analyze reading</button>
+      <div class="result" id="bpresult"></div>
+    </div>
+    <div class="warning"><h3>Important before you act</h3><p style="margin-top:8px;color:#62778a">A single reading is a snapshot. Repeat readings using correct technique and discuss persistent concerns with a healthcare professional.</p><ul><li>Do not use this tool to change medication.</li><li>Pregnancy and some medical conditions require different guidance.</li><li>If a reading is extremely high or symptoms are present, use the urgent-care information below.</li></ul></div>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <div class="section-title"><div class="eyebrow">07 • TRACK YOUR TREND</div><h2>Make your readings useful.</h2><p>Keep a simple log instead of relying on memory. Consistent records help healthcare professionals see patterns.</p></div>
+  <div class="table-wrap journal"><table><tr><th>Date</th><th>Time</th><th>BP</th><th>Pulse</th><th>Notes</th></tr>
+    <tr><td>Example</td><td>AM</td><td>120/80</td><td>72</td><td>Rested 5 min</td></tr>
+    <tr><td>____________</td><td>_____</td><td>________</td><td>_____</td><td>________________</td></tr>
+    <tr><td>____________</td><td>_____</td><td>________</td><td>_____</td><td>________________</td></tr>
+    <tr><td>____________</td><td>_____</td><td>________</td><td>_____</td><td>________________</td></tr>
+  </table></div>
+</div></section>
+
+<section id="emergency"><div class="container">
+  <div class="emergency">
+    <div class="eyebrow" style="color:#ffb8c0">08 • SAFETY FIRST</div>
+    <h2>When should you seek urgent help?</h2>
+    <p style="margin-top:9px">If your blood pressure is <strong>higher than 180/120 mm Hg</strong>, wait at least 1 minute and take another reading. If it remains very high, contact a healthcare professional promptly. If a very high reading occurs with concerning symptoms, seek emergency medical care.</p>
+    <div class="symptoms"><span>Chest pain</span><span>Shortness of breath</span><span>Back pain</span><span>Numbness</span><span>Weakness</span><span>Vision changes</span><span>Difficulty speaking</span></div>
+    <p><strong>Do not wait for symptoms to “go away” if you believe you are experiencing an emergency.</strong> Follow your local emergency service instructions.</p>
+  </div>
+</div></section>
+
+<section id="nursing" class="band"><div class="container">
+  <div class="section-title"><div class="eyebrow">09 • NURSING ADVOCACY</div><h2>What can nurses do?</h2><p>Nurses are key members of multidisciplinary teams and community health efforts that support prevention, screening, education and long-term blood pressure control.</p></div>
+  <div class="nurse">
+    <div class="nurse-art"><div class="nurse-person"><div class="emoji">👩‍⚕️</div><strong>Educate • Screen • Support • Refer</strong></div></div>
+    <div class="role-list">
+      <div class="role"><b>Screening</b><p>Measure BP accurately and recognize readings that need follow-up.</p></div>
+      <div class="role"><b>Health teaching</b><p>Explain BP concepts and categories using clear, patient-friendly language.</p></div>
+      <div class="role"><b>Technique coaching</b><p>Teach correct cuff placement, positioning, rest and home monitoring.</p></div>
+      <div class="role"><b>Lifestyle support</b><p>Encourage practical goals for diet, activity, sleep, stress and tobacco avoidance.</p></div>
+      <div class="role"><b>Medication education</b><p>Reinforce adherence and encourage discussion of side effects or barriers.</p></div>
+      <div class="role"><b>Follow-up</b><p>Help patients keep records and connect with appropriate care.</p></div>
+      <div class="role"><b>Advocacy</b><p>Promote accessible screening and health information in communities.</p></div>
+      <div class="role"><b>Safety</b><p>Teach people to recognize severe readings and symptoms requiring urgent evaluation.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <div class="section-title"><div class="eyebrow">10 • MYTH BUSTER</div><h2>Let's clear up common misconceptions.</h2></div>
+  <div class="myths">
+    <div class="myth"><div class="m">MYTH: “I feel okay, so my BP must be okay.”</div><div class="f">FACT: High blood pressure often has no noticeable symptoms. Measurement is how you know your BP.</div></div>
+    <div class="myth"><div class="m">MYTH: “One high reading means I have hypertension.”</div><div class="f">FACT: A diagnosis is based on appropriate measurements and professional assessment—not one isolated reading.</div></div>
+    <div class="myth"><div class="m">MYTH: “Only older people need to monitor BP.”</div><div class="f">FACT: High blood pressure can affect adults of different ages, so awareness and screening matter.</div></div>
+    <div class="myth"><div class="m">MYTH: “If medicine works, lifestyle changes no longer matter.”</div><div class="f">FACT: Lifestyle changes are part of prevention and management and may complement prescribed treatment.</div></div>
+  </div>
+</div></section>
+
+<section class="band faq"><div class="container">
+  <div class="section-title"><div class="eyebrow">11 • QUICK ANSWERS</div><h2>Frequently asked questions</h2></div>
+  <details><summary>How often should I check my BP at home?</summary><p>It depends on why you are monitoring and what your healthcare professional recommends. When home monitoring is needed, use a validated upper-arm device, follow a standardized technique and record readings consistently.</p></details>
+  <details><summary>Can caffeine, exercise or smoking affect a reading?</summary><p>Yes. The AHA recommends avoiding caffeine, smoking and exercise for 30 minutes before measurement because they can affect readings.</p></details>
+  <details><summary>What kind of home monitor is preferred?</summary><p>An accurate, validated upper-arm cuff monitor is generally preferred. Cuffless devices such as smartwatches should not be relied on for accurate BP measurement unless they demonstrate adequate validation and reliability.</p></details>
+  <details><summary>Can I stop my medication when my BP improves?</summary><p>No. Do not stop or change prescribed blood pressure medication without talking with your healthcare professional.</p></details>
+  <details><summary>Why can two readings be different?</summary><p>Blood pressure naturally varies and can be influenced by posture, activity, stress, talking, caffeine and measurement technique. That is why repeated standardized readings are useful.</p></details>
+</div></section>
+
+<section id="quiz"><div class="container">
+  <div class="section-title"><div class="eyebrow">12 • TEST YOUR KNOWLEDGE</div><h2>Quick BP challenge</h2><p>Three questions. See if you can get all three.</p></div>
+  <div class="quiz">
+    <div class="q"><p>1. Which number is systolic pressure?</p><label><input type="radio" name="q1" value="a"> The top number</label><label><input type="radio" name="q1" value="b"> The bottom number</label></div>
+    <div class="q"><p>2. Which position is recommended for a routine home reading?</p><label><input type="radio" name="q2" value="a"> Legs crossed and arm hanging down</label><label><input type="radio" name="q2" value="b"> Back supported, feet flat, arm supported at heart level</label></div>
+    <div class="q"><p>3. What should you do if BP is repeatedly above 180/120 mm Hg?</p><label><input type="radio" name="q3" value="a"> Ignore it if you feel fine</label><label><input type="radio" name="q3" value="b"> Repeat the reading and seek appropriate urgent medical guidance</label></div>
+    <button class="checkbtn" onclick="quiz()">Submit answers</button><div class="quiz-result" id="quizresult"></div>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <div class="section-title"><div class="eyebrow">13 • TAKE ACTION</div><h2>Three things to remember</h2></div>
+  <div class="three">
+    <div class="card"><div class="iconbox">1</div><h3>Know</h3><p>Know your blood pressure numbers and what they mean.</p></div>
+    <div class="card"><div class="iconbox">2</div><h3>Measure</h3><p>Use correct technique and keep a record when monitoring at home.</p></div>
+    <div class="card"><div class="iconbox">3</div><h3>Act</h3><p>Build healthy habits and seek professional guidance when readings remain high.</p></div>
+  </div>
+  <div class="callout" style="margin-top:22px;text-align:center"><h3>Know Your Numbers. Protect Your Health.</h3><p>Share reliable blood pressure information with your family, classmates and community.</p></div>
+</div></section>
+
+<section><div class="container">
+  <div class="section-title"><div class="eyebrow">REFERENCES • FOR LEARNING</div><h2>Trusted sources behind BP AWARE</h2><p>Information was reviewed against current guidance from major public-health and cardiovascular organizations.</p></div>
+  <div class="sourcebox">
+    <p><strong>American Heart Association.</strong> 2025 High Blood Pressure Guideline; Blood Pressure Categories; Home Blood Pressure Monitoring; Blood Pressure Explained.</p>
+    <p><strong>World Health Organization.</strong> Hypertension fact sheet, 25 September 2025, and 2025 Philippines hypertension profile.</p>
+    <p><strong>Centers for Disease Control and Prevention.</strong> Preventing High Blood Pressure.</p>
+    <p style="margin-top:14px"><strong>Educational note:</strong> This website is an advocacy/education project and is not a substitute for individualized medical diagnosis, treatment or emergency care.</p>
+  </div>
+</div></section>
+
+<footer><div class="container">
+  <div class="footgrid"><div><div class="footerbrand">BP <b>AWARE</b></div><p>Know Your Numbers. Protect Your Health.</p></div><div><p><strong>Activity 6 • Replit Implementation</strong></p><p>Nursing Advocacy Project • Blood Pressure Education</p></div></div>
+  <p class="small">Healthy People. Stronger Communities. • Built as a one-page educational advocacy website.</p>
+</div></footer>
+
+<script>
+function checkBP(){
+ const s=Number(document.getElementById('sys').value),d=Number(document.getElementById('dia').value),r=document.getElementById('bpresult');
+ if(!s||!d){r.style.display='block';r.innerHTML='<strong>Please enter both numbers.</strong><br>Example: 120 / 80';return}
+ let cat,advice;
+ if(s>180||d>120){cat='Severe range';advice='Repeat after at least 1 minute. If still very high, contact a healthcare professional promptly. If symptoms are present, seek emergency care.'}
+ else if(s>=140||d>=90){cat='Stage 2 hypertension range';advice='This reading is in a high range. Repeated readings should be evaluated by a healthcare professional.'}
+ else if(s>=130||d>=80){cat='Stage 1 hypertension range';advice='This reading is above the normal range. Continue proper monitoring and discuss repeated high readings with a healthcare professional.'}
+ else if(s>=120&&d<80){cat='Elevated range';advice='The systolic number is elevated. Focus on healthy habits and follow-up monitoring.'}
+ else{cat='Normal range';advice='This reading falls within the normal category for adults. Continue healthy habits and monitor as recommended.'}
+ r.style.display='block';r.innerHTML='<strong>'+cat+'</strong><p style="margin-top:5px;color:#62778a">'+advice+'</p><small>Educational category only — not a diagnosis.</small>';
+}
+function quiz(){
+ let score=0;
+ if(document.querySelector('input[name="q1"]:checked')?.value==='a')score++;
+ if(document.querySelector('input[name="q2"]:checked')?.value==='b')score++;
+ if(document.querySelector('input[name="q3"]:checked')?.value==='b')score++;
+ const e=document.getElementById('quizresult');
+ e.textContent='Score: '+score+'/3 — '+(score===3?'Excellent! You know your BP basics. 🎉':score===2?'Good work! Review one more section and try again. 👍':'Keep learning—scroll through BP AWARE and try again. 📚');
+}
+</script>
+</body>
+</html>
