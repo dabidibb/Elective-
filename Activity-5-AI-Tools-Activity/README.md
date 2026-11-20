@@ -16,4 +16,4 @@ I learned that the words I use in an AI prompt can greatly affect the result. My
 ## Submitted activity
 The original submission contains the two generated images, the prompts, and the comparison.
 
-**[View my complete Activity 5 PDF](ACTIVITY%205_%20AI%20TOOLS%20ACTIVITY.pdf)**
+**[View my complete Activity 5 PDF](Activity-5-AI-Tools-Maloto.pdf)**

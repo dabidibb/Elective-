@@ -21,4 +21,4 @@ The complete standalone website is included as `index.html`, with its HTML, CSS,
 ## Submitted activity PDF
 The original PDF contains the website objectives, screenshots, and reflection.
 
-**[View my complete Activity 6 PDF](Maloto_activity%206.pdf)**
+**[View my complete Activity 6 PDF](Activity-6-Website-Maloto.pdf)**

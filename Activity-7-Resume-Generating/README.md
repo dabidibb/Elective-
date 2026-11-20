@@ -19,4 +19,4 @@ I learned that different AI tools can give different results even when they rece
 ## Submitted activity
 The original PDF contains the full prompt, both resume images, comparison table, and reflection.
 
-**[View my complete Activity 7 PDF](Maloto_Activity%207.pdf)**
+**[View my complete Activity 7 PDF](Activity-7-Resume-Maloto.pdf)**
