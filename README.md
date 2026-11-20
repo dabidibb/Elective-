@@ -1,17 +1,20 @@
 <div align="center">
 
-<img src="https://avatars.githubusercontent.com/u/324347731?v=4" width="125" alt="GitHub profile photo" />
+<img src="https://avatars.githubusercontent.com/u/324347731?v=4" width="140" alt="Jan Dave P. Maloto profile photo" />
 
-# Jan Dave P. Maloto
-### BS Nursing Student | GE 4120 Digital Portfolio
+# JAN DAVE P. MALOTO
 
-**Ateneo de Davao University · Fourth-Year Nursing Student**
+### DIGITAL PORTFOLIO · GE 4120
 
-*Learning how to use technology, creativity, and digital tools in nursing and education.*
+**Fourth-Year BS Nursing Student · Ateneo de Davao University**
 
-![Portfolio](https://img.shields.io/badge/Portfolio-GE%204120-153B63?style=for-the-badge)
-![Activities](https://img.shields.io/badge/Activities-1%20to%207-258E92?style=for-the-badge)
-![Course](https://img.shields.io/badge/Course-21st%20Century%20IT%20Skills-5665A8?style=for-the-badge)
+*Connecting creative digital skills with meaningful health education.*
+
+![Digital Portfolio](https://img.shields.io/badge/DIGITAL-PORTFOLIO-163A5F?style=for-the-badge)
+![Seven Activities](https://img.shields.io/badge/07-COURSE%20ACTIVITIES-168D93?style=for-the-badge)
+![Nursing and Technology](https://img.shields.io/badge/NURSING-%2B%20TECHNOLOGY-5266A5?style=for-the-badge)
+
+**[Explore Activities](#-explore-my-work) · [Skills](#-skills--tools) · [Course Reflection](#-course-reflection)**
 
 </div>
 
@@ -19,43 +22,81 @@
 
 ## 👋 About Me
 
-Hello! I am **Jan Dave P. Maloto**, a fourth-year **Bachelor of Science in Nursing** student at **Ateneo de Davao University**. This repository is my portfolio for **GE 4120 — The 21st Century IT Skills**.
+Hello! I am **Jan Dave P. Maloto**, a fourth-year **Bachelor of Science in Nursing** student at **Ateneo de Davao University**. Welcome to my portfolio for **GE 4120 — The 21st Century IT Skills**.
 
-I am interested in learning how digital tools can help me create presentations, share useful information, and make health education materials. This portfolio shows my activities and what I learned from each one.
+This collection shows how I explored presentation design, visual communication, AI tools, and website creation. As a nursing student, I am interested in using these skills to make health information clearer, more engaging, and easier to understand.
 
-## 🧰 Skills & Tools Practiced
+## ✨ Portfolio at a Glance
 
-| 🎨 Design & Communication | 💻 Digital Tools | 🩺 Nursing Application |
+| 🎨 Visual Design | 🤖 AI & Digital Tools | 🩺 Health Communication |
+|:---:|:---:|:---:|
+| Presentations, colors, typography, and infographics | AI image prompting, resume generation, and web development | Patient-friendly information and blood pressure awareness |
+
+## 📚 Explore My Work
+
+### 🎨 Design & Visual Communication
+
+| Activity | Project | Explore |
+|:---:|---|---|
+| **01** | **Presentation Design Principles** — Practiced clear layouts and organized presentation content. | [View Activity 1](Activity-1-Presentation-Design-Principles/) |
+| **02** | **Color Palette and Typography** — Explored colors and fonts for readable designs. | [View Activity 2](Activity-2-Color-Palette-and-Typography/) |
+| **03** | **Social Media Infographics and Mini Project Documentation** — Created an infographic and documented a project. | [View Activity 3](Activity-3-Social-Media-Infographics-and-Documentation/) |
+| **04** | **Presentation Exam** — Completed a Canva presentation design activity. | [View Activity 4](Activity-4-Presentation-Exam/) |
+
+<details>
+<summary><b>Preview selected visual projects</b></summary>
+
+<br>
+
+**Activity 1 · Presentation Design**
+
+<img src="Activity-1-Presentation-Design-Principles/Activity-1-Presentation-Design.png" alt="Activity 1 presentation design output" width="640">
+
+**Activity 3 · Social Media Infographic**
+
+<img src="Activity-3-Social-Media-Infographics-and-Documentation/Infographic_MALOTO.png" alt="Activity 3 infographic output" width="520">
+
+</details>
+
+### 🤖 AI, Web Design & Professional Development
+
+| Activity | Project | Explore |
+|:---:|---|---|
+| **05** | **AI Tools Activity** — Improved an AI-generated image using a more detailed prompt. | [View Activity 5](Activity-5-AI-Tools-Activity/) |
+| **06** | **Making a Website: BP AWARE** — Created a blood pressure education website. | [View Activity 6](Activity-6-Making-a-Website/) |
+| **07** | **Resume Generating** — Compared nursing student resumes made with two AI tools. | [View Activity 7](Activity-7-Resume-Generating/) |
+
+<div align="center">
+
+### 🩺 Featured Project · BP AWARE
+
+**A digital health education website focused on blood pressure awareness and hypertension.**
+
+[**Explore BP AWARE Project**](Activity-6-Making-a-Website/) · [**View Website Source**](Activity-6-Making-a-Website/index.html)
+
+</div>
+
+---
+
+## 🧰 Skills & Tools
+
+| Skills Practiced | Tools Used | Application in Nursing |
 |---|---|---|
-| Presentation design | Canva | Health education materials |
-| Color palettes and typography | ChatGPT and Claude AI | Blood pressure awareness |
-| Social media infographics | Replit and GitHub | Clear patient-friendly information |
-| Visual comparison and reflection | AI image prompting | Digital health communication |
+| Presentation design and visual organization | Canva | Class presentations and health teaching |
+| Color, typography, and infographic design | Digital design tools | Clear educational materials |
+| AI prompting and comparing outputs | ChatGPT and Claude AI | Reviewing and improving digital content |
+| Website creation and file organization | Replit and GitHub | Sharing health education resources |
 
-## 📚 My Activities
+## 🌱 Course Reflection
 
-| Activity | Project | What I Worked On |
-|:--:|---|---|
-| **01** | [Presentation Design Principles](Activity-1-Presentation-Design-Principles/) | Learning how to make clear and organized presentations |
-| **02** | [Color Palette and Typography](Activity-2-Color-Palette-and-Typography/) | Exploring color combinations and readable fonts |
-| **03** | [Social Media Infographics and Mini Project Documentation](Activity-3-Social-Media-Infographics-and-Documentation/) | Creating visual information and documenting a project |
-| **04** | [Presentation Exam](Activity-4-Presentation-Exam/) | [Open Canva submission](https://canva.link/rflj768aiskkt9x) |
-| **05** | [AI Tools Activity](Activity-5-AI-Tools-Activity/) | Improving an AI-generated picture through a more detailed prompt |
-| **06** | [Making a Website — BP AWARE](Activity-6-Making-a-Website/) | Designing a website about blood pressure and hypertension |
-| **07** | [Resume Generating](Activity-7-Resume-Generating/) | Comparing resumes created with ChatGPT and Claude AI |
-
-> **Portfolio status:** All seven activities include their submitted work or the required project link, with a README for each activity. Activity 6 also includes the BP AWARE website source code.
-
-## 🌱 What This Course Taught Me
-
-GE 4120 helped me practice using digital tools for creative and educational work. I learned that clear designs, organized information, and specific AI prompts can improve the results of a project. As a nursing student, I can apply these skills when preparing presentations and teaching people about health.
+GE 4120 helped me understand how technology and creativity can work together. I learned that clear designs, organized information, and specific instructions can improve the quality of digital projects. I also learned to review AI-generated results instead of relying on them without checking. As a future nurse, I can use these skills to prepare presentations, create educational materials, and explain health information in a way that people can understand.
 
 ---
 
 <div align="center">
 
-### Thank you for visiting my portfolio!
+**Thank you for visiting my digital portfolio!**
 
-*GE 4120 · The 21st Century IT Skills*
+*GE 4120 · The 21st Century IT Skills · Ateneo de Davao University*
 
 </div>
