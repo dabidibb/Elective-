@@ -17,4 +17,6 @@ I used ChatGPT and Claude AI to create a one-page nursing student resume from th
 I learned that different AI tools can give different results even when they receive the same task. ChatGPT created a more creative resume design, while Claude AI used a simpler design with more information. One challenge was deciding which result was better without judging only by appearance. I compared the structure, clarity, formatting, and completeness of both resumes to make a fair evaluation. In the future, I can use AI tools to help prepare documents while still checking the results myself.
 
 ## Submitted activity
-The original PDF contains the full prompt, both resume images, comparison table, and reflection. **The PDF still needs to be uploaded to this folder.**
+The original PDF contains the full prompt, both resume images, comparison table, and reflection.
+
+**[View my complete Activity 7 PDF](Maloto_Activity%207.pdf)**
