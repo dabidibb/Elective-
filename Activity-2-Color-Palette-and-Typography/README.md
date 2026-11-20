@@ -6,10 +6,10 @@
 This activity explores how colors and font choices affect the appearance and readability of a design.
 
 ## Activity outputs
-- [Design 1](1.png)
-- [Design 2](2.png)
-- [Design 3](3.png)
-- [Design 4](4.png)
+- [Design 1](Color-and-Typography-1.png)
+- [Design 2](Color-and-Typography-2.png)
+- [Design 3](Color-and-Typography-3.png)
+- [Design 4](Color-and-Typography-4.png)
 
 ## What have I learned?
 I learned that choosing the right colors and fonts can make a design easier to understand. Colors should work well together, and the text should be easy to read. A challenge in this type of activity is finding a combination that looks good without making the design confusing. I can improve by comparing different color and font choices before choosing the final design. I can apply this when creating posters, presentations, and health teaching materials.

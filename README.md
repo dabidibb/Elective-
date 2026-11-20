@@ -36,13 +36,13 @@ I am interested in learning how digital tools can help me create presentations, 
 
 | Activity | Project | What I Worked On |
 |:--:|---|---|
-| **01** | [Presentation Design Principles](Activity%201%3A%20Presentation%20Design%20Principles/) | Learning how to make clear and organized presentations |
-| **02** | [Color Palette and Typography](Activity%202%3A%20Color%20Palette%20and%20Typography/) | Exploring color combinations and readable fonts |
-| **03** | [Social Media Infographics and Mini Project Documentation](Activity%203%3A%20Social%20Media%20Infographics%20and%20Mini%20Project%20Documentation/) | Creating visual information and documenting a project |
-| **04** | [Presentation Exam](Activity%204%3A%20Presentation%20Exam/) | [Open Canva submission](https://canva.link/rflj768aiskkt9x) |
-| **05** | [AI Tools Activity](Activity%205%3A%20AI%20Tools%20Activity/) | Improving an AI-generated picture through a more detailed prompt |
-| **06** | [Making a Website — BP AWARE](Activity%206%3A%20Making%20a%20Website/) | Designing a website about blood pressure and hypertension |
-| **07** | [Resume Generating](Activity%207%3A%20Resume%20Generating/) | Comparing resumes created with ChatGPT and Claude AI |
+| **01** | [Presentation Design Principles](Activity-1-Presentation-Design-Principles/) | Learning how to make clear and organized presentations |
+| **02** | [Color Palette and Typography](Activity-2-Color-Palette-and-Typography/) | Exploring color combinations and readable fonts |
+| **03** | [Social Media Infographics and Mini Project Documentation](Activity-3-Social-Media-Infographics-and-Documentation/) | Creating visual information and documenting a project |
+| **04** | [Presentation Exam](Activity-4-Presentation-Exam/) | [Open Canva submission](https://canva.link/rflj768aiskkt9x) |
+| **05** | [AI Tools Activity](Activity-5-AI-Tools-Activity/) | Improving an AI-generated picture through a more detailed prompt |
+| **06** | [Making a Website — BP AWARE](Activity-6-Making-a-Website/) | Designing a website about blood pressure and hypertension |
+| **07** | [Resume Generating](Activity-7-Resume-Generating/) | Comparing resumes created with ChatGPT and Claude AI |
 
 > **Portfolio progress:** All seven activities have their own documentation. The BP AWARE website source is included in Activity 6. The original PDF submissions for Activities 5–7 still need to be added before final submission.
 

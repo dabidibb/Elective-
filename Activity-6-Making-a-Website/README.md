@@ -13,7 +13,7 @@ Creating the BP AWARE website helped me understand how technology can be used to
 
 ## Open the working website
 - **[View the BP AWARE website source (index.html)](index.html)**
-- **[Open the website in a browser using GitHub Pages](https://dabidibb.github.io/Elective-/Activity%206%3A%20Making%20a%20Website/)** *(works after GitHub Pages is enabled for this repository)*
+- **[Open the website in a browser using GitHub Pages](https://dabidibb.github.io/Elective-/Activity-6-Making-a-Website/)** *(works after GitHub Pages is enabled for this repository)*
 - [Original Replit project](https://replit.com/@dabidib/BP-AWARE-Website)
 
 The complete standalone website is included as `index.html`, with its HTML, CSS, and JavaScript together in one file. It includes an interactive blood pressure checker and a short quiz.
